@@ -1,0 +1,405 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Raleway:wght@700;900&display=swap');
+
+/*==================*/
+/*==GENERAL LAYOUT==*/
+/*==================*/
+
+/* Set body background color and margin */
+body {
+	background-color: #dddddd;
+	margin: 0px;
+}
+
+/* Set paragraphs' and list items' font family */
+p, li, label, button {
+	font-family: "Noto Sans Display";
+}
+
+/* Make the footer text have a text color of white */
+footer {
+	color: #ffffff;
+	padding-top: 5px;
+	text-align: center;
+}
+
+/* Set headings' and links' font and text properties */
+h1, h2, a {
+	font-family: Raleway;
+	font-weight: 700;
+	text-shadow: 0px 0px 5px #000000;
+	text-align: center;
+}
+
+/* Set the color of the header */
+header {
+	background-color: #f4b9b9;
+}
+
+/* Set the font size, padding, margin, and text alignment of the heading inside the header */
+header h1 {
+	font-size: 50px;
+	padding: 30px 0px;
+	height: 60px;
+	margin: 0px;
+	text-align: left;
+}
+
+/* Set the margin and clearing of float elements of the articles */
+article {
+	margin: 10px 100px;
+	clear: both;
+}
+
+/* Set the font size of the articles' headings */
+article h1 {
+	font-size: 40px;
+}
+
+/* Set article links' text shadow and transition for the color */
+article a {
+	text-shadow: 0px 0px 2px #000000;
+	transition: color 150ms ease-out;
+}
+
+/* Change article links' text color when hovered */
+article a:hover {
+	color: #f2e969;
+}
+
+/* Change article links' text color when clicked */
+article a:active {
+	color: #f2c969;
+}
+
+/* Login element */
+aside {
+	border: 1px solid black;
+	background-color: #e2d4d4;
+	width: 40%;
+	border-radius: 20px;
+	text-align: center;
+}
+
+/* Title of the login element */
+aside h2 {
+	background-color: #dfbfbf;
+	margin: 0px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom: 1px solid black;
+}
+
+/* Inputs div */
+aside div#inputs {
+	margin: 20px;
+}
+
+/* Forgot Password link */
+aside a {
+	font-size: 10px;
+}
+
+/* Text boxes for username and password */
+input#username, input#password {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	transition: all 100ms ease-in-out;
+}
+
+/* Change background color when hovered */
+input#username:hover, input#password:hover {
+	background-color: #eeeeee;
+	border: 1px solid #b87777;
+}
+
+/* Change background color when clicked */
+input#username:focus, input#password:focus {
+	background-color: #ee8989;
+}
+
+/* Login button */
+button {
+	background-color: #805656;
+	color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+	transition: all 100ms ease-in-out;
+}
+
+/* Change button when hovered */
+button:hover {
+	background-color: #b87777;
+	color: white;
+	border: 1px solid #ee8989;
+}
+
+/* Change button when clicked on */
+button:active {
+	background-color: #d38c76;
+	color: white;
+	border: 1px solid #e49d9d;
+}
+
+.forum {
+	border: 1px solid black;
+	background-color: #e2d4d4;
+	width: 20%;
+	margin: 1.2%;
+	padding: 1.2%;
+	border-radius: 20px;
+	text-align: center;
+	display: inline-block;
+	clear: none;
+}
+
+.forum h1 {
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.forum p {
+	font-size: 16px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+p#error {
+	color: #a83535;
+	font-style: italic;
+}
+
+/* Set the color of the footer */
+footer {
+	background-color: #805656;
+}
+
+/*==========*/
+/*==NAVBAR==*/
+/*==========*/
+
+/* Set the color of the navbar */
+nav {
+	background-color: #805656;
+	margin: 0px;
+	z-index: 1;
+}
+
+/* Remove the "list-ness" of the list containing the navbar links */
+ul.nav {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #805656;
+	overflow: hidden;
+	display: block;
+}
+
+/* Make the links look like buttons */
+ul.nav a {
+	display: block;
+	padding: 20px;
+	background-color: #737373;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	width: 100px;
+	border: 1px solid black;
+}
+
+/* Have a different color for the About Us link */
+li.right a {
+	background-color: #545454;
+}
+
+/* Change the color of the links when hovered */
+ul.nav a:hover {
+	background-color: #a83535;
+}
+
+/* Make the navbar fixed when it has the sticky class */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+
+/* Add a padding to divs when the navbar gets the sticky class */
+.sticky + div {
+	padding-top: 90px;
+}
+
+/*==========*/
+/*==IMAGES==*/
+/*==========*/
+
+/* Change the size and border radius of the logo */
+.logo {
+	border-radius: 30px;
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 10px;
+	margin-right: 20px;
+}
+
+/* Add an image sprite for the Instagram icon */
+img.insta {
+	width: 40px;
+	height: 40px;
+	background: url(../images/socmed_icons.jpg) -449.1px -17.8px / 645.4px;
+	border-radius: 100px;
+	margin: 3px;
+}
+
+/* Change the image sprite of the Instagram icon when hovered */
+img.insta:hover {
+	background: url(../images/socmed_icons.jpg) -232.5px -17.8px / 645.4px;
+}
+
+/* Add an image sprite for the Facebook icon */
+img.fb {
+	width: 40px;
+	height: 40px;
+	background: url(../images/socmed_icons.jpg) -590.9px -228.6px / 645.4px;
+	border-radius: 100px;
+	margin: 3px;
+}
+
+/* Change the image sprite of the Facebook icon when hovered */
+img.fb:hover {
+	background: url(../images/socmed_icons.jpg) -374.3px -228.6px / 645.4px;
+}
+
+/* Make elements of the class left float left */
+.left {
+	float: left;
+}
+
+/* Make elements of the class right float right */
+.right {
+	float: right;
+}
+
+/* Make images (in divs) with classes left or right have a margin of 20px to the left and right */
+div.left, div.right {
+	margin: 0px 20px;
+}
+
+/*===================*/
+/*==IMAGE CITATIONS==*/
+/*===================*/
+
+/* Make the div for image citations a small circle and add a transition for the transform and width */
+.imageref {
+	width: 25px;
+	height: 25px;
+	border-radius: 20px;
+	background-color: #ffffff;
+	margin: auto;
+	transform: rotate(-90deg);
+	transition: width 2s, transform 2s;
+}
+
+/* Make the image citation itself transparent and add a transition for the opacity */
+.imageref p {
+	color: #000000;
+	opacity: 0;
+	text-align: center;
+	transition: opacity 2s;
+}
+
+/* When the Home parallax element gets hovered on, the div rotates and extends to 450px */
+.parallaxhome:hover .imageref {
+	width: 450px;
+	transform: rotate(0deg);
+}
+
+/* When the Why this Advocacy parallax element gets hovered on, the div rotates and extends to 280px */
+.parallaxwhy:hover .imageref {
+	width: 280px;
+	transform: rotate(0deg);
+}
+
+/* When the About Us parallax element gets hovered on, the div rotates and extends to 120px */
+.parallaxabout:hover .imageref {
+	width: 120px;
+	transform: rotate(0deg);
+}
+
+/* When the image div gets hovered on, the citation div rotates and extends to 110px */
+.image:hover .imageref {
+	width: 110px;
+	transform: rotate(0deg);
+}
+
+/* When the parallax or image div gets hovered on, the image citation itself becomes opaque */
+.parallaxhome:hover p, .parallaxwhy:hover p, .parallaxabout:hover p, .image:hover p {
+	opacity: 1;
+}
+
+/*=========================*/
+/*==PARALLAX & HERO IMAGE==*/
+/*=========================*/
+
+/* Add a parallax effect to the elements with classes parallaxhome, parallaxwhy, or parallaxabout*/
+.parallaxhome, .parallaxwhy, .parallaxabout {
+	height: 500px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+/* Add the background image for the parallax element in the Home page*/
+.parallaxhome {
+	background-image: url(../images/abortion_is_healthcare.png);
+	background-position: top;
+}
+
+/* Add the background image for the parallax element in the Why this Advocacy page*/
+.parallaxwhy {
+	background-image: url(../images/abortion_is_essential.jpg);
+	background-position: bottom;
+}
+
+/* Add the background image for the parallax element in the About Us page*/
+.parallaxabout {
+	background-image: url(../images/my-body-my-choice.jpg);
+	background-position: top;
+}
+
+/* Position the hero text div */
+.headertext {
+	text-align: center;
+	position: absolute;
+	top: 450px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+/* Configure the font and background of the larger heading in the hero text div */
+.headertext h1 {
+	font-weight: 900;
+	font-size: 70px;
+	margin: 10px;
+	padding: 10px;
+	background-color: #80565670;
+	border-radius: 15px;
+}
+
+/* Configure the font of the smaller heading in the hero text div */
+.headertext h2 {
+	font-weight: 900;
+	font-size: 40px;
+	margin: 0px;
+}
